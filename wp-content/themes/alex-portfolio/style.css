@@ -1,0 +1,141 @@
+cd ~/Documents/projects/wordpress-docker
+cat > wp-content/themes/alex-portfolio/style.css <<'EOF'
+/*
+Theme Name: Alex Portfolio
+Theme URI: https://example.com
+Author: Alex Chau Nguyen
+Author URI: https://example.com
+Description: Minimal portfolio theme for Alex.
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: alex-portfolio
+*/
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111827;
+  background: #f9fafb;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.site-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+header.site-header {
+  padding: 1.5rem 1.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.site-subtitle {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.main-nav {
+  margin-top: 0.75rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+section {
+  margin: 2.5rem 0;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero {
+  margin-top: 1rem;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  max-width: 40rem;
+  color: #4b5563;
+}
+
+.hero-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: white;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem 1.1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+EOF
